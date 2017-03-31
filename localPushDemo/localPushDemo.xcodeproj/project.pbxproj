@@ -224,7 +224,7 @@
 				TargetAttributes = {
 					7CB95B3F1E8B59290041469E = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = ATVKY62WDP;
+						DevelopmentTeam = W34ZLPQLA6;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Push = {
@@ -454,10 +454,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = localPushDemo/localPushDemo.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = ATVKY62WDP;
+				DEVELOPMENT_TEAM = W34ZLPQLA6;
 				INFOPLIST_FILE = localPushDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.CIGNA-CMB.PerfectLife.localPushDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CIGNACMBPerfectLife.localPushDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -468,10 +468,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = localPushDemo/localPushDemo.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = ATVKY62WDP;
+				DEVELOPMENT_TEAM = W34ZLPQLA6;
 				INFOPLIST_FILE = localPushDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.CIGNA-CMB.PerfectLife.localPushDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CIGNACMBPerfectLife.localPushDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

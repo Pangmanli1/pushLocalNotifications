@@ -20,24 +20,19 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    if ([[UIDevice currentDevice].systemVersion floatValue] > 10.0) {
-        
-        [[UNUserNotificationCenter currentNotificationCenter]requestAuthorizationWithOptions:(UNAuthorizationOptionAlert|UNAuthorizationOptionBadge|UNAuthorizationOptionSound) completionHandler:^(BOOL granted, NSError * _Nullable error) {
-            
-            if (!error) {
-                NSLog(@"request authorization succeeded!");
-            }
-
-            
-        }];
-    }else if ([[UIDevice currentDevice].systemVersion floatValue] > 8.0){
+    
+    
+    if (IS_IOS8_OR_LATER){
         
         UIUserNotificationSettings * settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil];
         [application registerUserNotificationSettings:settings];
         
+    }else {
+        
+        
+        [ [UIApplication sharedApplication]registerForRemoteNotificationTypes:(UIRemoteNotificationTypeAlert|UIRemoteNotificationTypeBadge|UIRemoteNotificationTypeSound) ];
+        
     }
-    
-    
     
     return YES;
 }
